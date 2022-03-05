@@ -1,3 +1,4 @@
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -13,8 +14,17 @@ class _MyDrawerHeaderState extends State<MyDrawerHeader> {
   @override
   Widget build(BuildContext context) {
     return DrawerHeader(
+
+
         decoration: BoxDecoration(color: Colors.blue),
-        child: Column(children: [
+        child:
+        Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween ,
+            children: [
+              Text("Daryo",style: TextStyle(color: Colors.white,fontSize: 28),),
+            ],
+          ),
           Row(),
           SizedBox(
             height: 32,

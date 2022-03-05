@@ -1,3 +1,5 @@
+
+
 import 'package:daryo_page/pages/letest_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +18,15 @@ class _DaryoPageState extends State<DaryoPage> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        drawer: const Drawer(
-          child: MyDrawerHeader(),
+        drawer: Drawer(
+          child:ListView(children:[
+          MyDrawerHeader(),
+            ListTile(title: Text("Salom"),),
+          ],
+
+          ),
+
+
         ),
         appBar: AppBar(
           title: const Text("Daryo"),
